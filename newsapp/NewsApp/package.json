@@ -1,0 +1,28 @@
+{
+  "name": "newsapp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cheerio": "^1.0.0",
+    "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-ejs-layouts": "^2.5.1",
+    "mongoose": "^8.13.1",
+    "mysql2": "^3.14.1",
+    "oracledb": "^6.8.0",
+    "pupeteer": "^0.0.1",
+    "puppeteer": "^24.4.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon index.js",
+    "client": "npm run dev --prefix react-app"
+  }
+}
